@@ -36,6 +36,7 @@
 		3A6B91A421AC463E0022AE71 /* MGPicsqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGPicsqueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B91A821AC463E0022AE71 /* MGPicsqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPicsqueTests.swift; sourceTree = "<group>"; };
 		3A6B91AA21AC463E0022AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6B91B321AC480B0022AE71 /* MGPicsque.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MGPicsque.playground; path = MGPicsque/MGPicsque.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		3A6B918721AC463C0022AE71 = {
 			isa = PBXGroup;
 			children = (
+				3A6B91B321AC480B0022AE71 /* MGPicsque.playground */,
 				3A6B919221AC463C0022AE71 /* MGPicsque */,
 				3A6B91A721AC463E0022AE71 /* MGPicsqueTests */,
 				3A6B919121AC463C0022AE71 /* Products */,
