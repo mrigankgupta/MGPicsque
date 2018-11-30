@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3A6B919421AC463C0022AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B919321AC463C0022AE71 /* AppDelegate.swift */; };
-		3A6B919621AC463C0022AE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B919521AC463C0022AE71 /* ViewController.swift */; };
 		3A6B919921AC463C0022AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919721AC463C0022AE71 /* Main.storyboard */; };
 		3A6B919B21AC463E0022AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919A21AC463E0022AE71 /* Assets.xcassets */; };
 		3A6B919E21AC463E0022AE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919C21AC463E0022AE71 /* LaunchScreen.storyboard */; };
 		3A6B91A921AC463E0022AE71 /* MGPicsqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91A821AC463E0022AE71 /* MGPicsqueTests.swift */; };
+		3A6B91B521AD85100022AE71 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91B421AD85100022AE71 /* WebService.swift */; };
+		3A6B91B621AD85100022AE71 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91B421AD85100022AE71 /* WebService.swift */; };
+		3A6B91B821AD85AE0022AE71 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91B721AD85AE0022AE71 /* Photo.swift */; };
+		3A6B91B921AD85AE0022AE71 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91B721AD85AE0022AE71 /* Photo.swift */; };
+		3A6B91BB21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BA21AEA3D70022AE71 /* PicsqueTimeline.swift */; };
+		3A6B91BC21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BA21AEA3D70022AE71 /* PicsqueTimeline.swift */; };
+		3A6B91BE21AEB59C0022AE71 /* FetchRecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */; };
+		3A6B91BF21AEB59C0022AE71 /* FetchRecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */; };
+		3A6B91C221AEC3850022AE71 /* PicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PicViewCell.swift */; };
+		3A6B91C321AEC3850022AE71 /* PicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PicViewCell.swift */; };
+		3A6B91C421AEC3850022AE71 /* PicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B91C121AEC3850022AE71 /* PicViewCell.xib */; };
+		3A6B91C521AEC3850022AE71 /* PicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B91C121AEC3850022AE71 /* PicViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +39,6 @@
 /* Begin PBXFileReference section */
 		3A6B919021AC463C0022AE71 /* MGPicsque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPicsque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B919321AC463C0022AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A6B919521AC463C0022AE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A6B919821AC463C0022AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A6B919A21AC463E0022AE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6B919D21AC463E0022AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,12 @@
 		3A6B91A821AC463E0022AE71 /* MGPicsqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPicsqueTests.swift; sourceTree = "<group>"; };
 		3A6B91AA21AC463E0022AE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A6B91B321AC480B0022AE71 /* MGPicsque.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MGPicsque.playground; path = MGPicsque/MGPicsque.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3A6B91B421AD85100022AE71 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3A6B91B721AD85AE0022AE71 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3A6B91BA21AEA3D70022AE71 /* PicsqueTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicsqueTimeline.swift; sourceTree = "<group>"; };
+		3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecent.swift; sourceTree = "<group>"; };
+		3A6B91C021AEC3850022AE71 /* PicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewCell.swift; sourceTree = "<group>"; };
+		3A6B91C121AEC3850022AE71 /* PicViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PicViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +95,17 @@
 		3A6B919221AC463C0022AE71 /* MGPicsque */ = {
 			isa = PBXGroup;
 			children = (
+				3A6B91BA21AEA3D70022AE71 /* PicsqueTimeline.swift */,
 				3A6B919321AC463C0022AE71 /* AppDelegate.swift */,
-				3A6B919521AC463C0022AE71 /* ViewController.swift */,
 				3A6B919721AC463C0022AE71 /* Main.storyboard */,
 				3A6B919A21AC463E0022AE71 /* Assets.xcassets */,
 				3A6B919C21AC463E0022AE71 /* LaunchScreen.storyboard */,
 				3A6B919F21AC463E0022AE71 /* Info.plist */,
+				3A6B91B421AD85100022AE71 /* WebService.swift */,
+				3A6B91B721AD85AE0022AE71 /* Photo.swift */,
+				3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */,
+				3A6B91C021AEC3850022AE71 /* PicViewCell.swift */,
+				3A6B91C121AEC3850022AE71 /* PicViewCell.xib */,
 			);
 			path = MGPicsque;
 			sourceTree = "<group>";
@@ -182,6 +203,7 @@
 				3A6B919E21AC463E0022AE71 /* LaunchScreen.storyboard in Resources */,
 				3A6B919B21AC463E0022AE71 /* Assets.xcassets in Resources */,
 				3A6B919921AC463C0022AE71 /* Main.storyboard in Resources */,
+				3A6B91C421AEC3850022AE71 /* PicViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6B91C521AEC3850022AE71 /* PicViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6B919621AC463C0022AE71 /* ViewController.swift in Sources */,
+				3A6B91B821AD85AE0022AE71 /* Photo.swift in Sources */,
+				3A6B91C221AEC3850022AE71 /* PicViewCell.swift in Sources */,
+				3A6B91BB21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
+				3A6B91B521AD85100022AE71 /* WebService.swift in Sources */,
 				3A6B919421AC463C0022AE71 /* AppDelegate.swift in Sources */,
+				3A6B91BE21AEB59C0022AE71 /* FetchRecent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6B91B921AD85AE0022AE71 /* Photo.swift in Sources */,
+				3A6B91C321AEC3850022AE71 /* PicViewCell.swift in Sources */,
+				3A6B91BC21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
+				3A6B91B621AD85100022AE71 /* WebService.swift in Sources */,
 				3A6B91A921AC463E0022AE71 /* MGPicsqueTests.swift in Sources */,
+				3A6B91BF21AEB59C0022AE71 /* FetchRecent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
