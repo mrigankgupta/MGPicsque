@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131F1D8E5607C1E248C4BFB3 /* Pods_MGPicsque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1B9226BD3CB0E0A8A8004 /* Pods_MGPicsque.framework */; };
 		3A6B919421AC463C0022AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B919321AC463C0022AE71 /* AppDelegate.swift */; };
 		3A6B919921AC463C0022AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919721AC463C0022AE71 /* Main.storyboard */; };
 		3A6B919B21AC463E0022AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919A21AC463E0022AE71 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		3A6B91C321AEC3850022AE71 /* PicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PicViewCell.swift */; };
 		3A6B91C421AEC3850022AE71 /* PicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B91C121AEC3850022AE71 /* PicViewCell.xib */; };
 		3A6B91C521AEC3850022AE71 /* PicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B91C121AEC3850022AE71 /* PicViewCell.xib */; };
+		4D7B7E75B303B17F598E0751 /* Pods_MGPicsqueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C15586FAE5CE4E41BB36658 /* Pods_MGPicsqueTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BDD42258291E155AA3AC6FC /* Pods-MGPicsque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsque.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque.release.xcconfig"; sourceTree = "<group>"; };
 		3A6B919021AC463C0022AE71 /* MGPicsque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPicsque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B919321AC463C0022AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6B919821AC463C0022AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecent.swift; sourceTree = "<group>"; };
 		3A6B91C021AEC3850022AE71 /* PicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewCell.swift; sourceTree = "<group>"; };
 		3A6B91C121AEC3850022AE71 /* PicViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PicViewCell.xib; sourceTree = "<group>"; };
+		9C15586FAE5CE4E41BB36658 /* Pods_MGPicsqueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGPicsqueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C3F38E1897FBAA2B45122C /* Pods-MGPicsqueTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsqueTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsqueTests/Pods-MGPicsqueTests.release.xcconfig"; sourceTree = "<group>"; };
+		A438C5BC4811A5E0E67634A4 /* Pods-MGPicsqueTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsqueTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsqueTests/Pods-MGPicsqueTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B1B9226BD3CB0E0A8A8004 /* Pods_MGPicsque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGPicsque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F912ED8E939DC1DFC5C7DCDD /* Pods-MGPicsque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsque.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131F1D8E5607C1E248C4BFB3 /* Pods_MGPicsque.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +76,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7B7E75B303B17F598E0751 /* Pods_MGPicsqueTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24CFC252D8ACC15BE5356F02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F912ED8E939DC1DFC5C7DCDD /* Pods-MGPicsque.debug.xcconfig */,
+				0BDD42258291E155AA3AC6FC /* Pods-MGPicsque.release.xcconfig */,
+				A438C5BC4811A5E0E67634A4 /* Pods-MGPicsqueTests.debug.xcconfig */,
+				A3C3F38E1897FBAA2B45122C /* Pods-MGPicsqueTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3A6B918721AC463C0022AE71 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +101,8 @@
 				3A6B919221AC463C0022AE71 /* MGPicsque */,
 				3A6B91A721AC463E0022AE71 /* MGPicsqueTests */,
 				3A6B919121AC463C0022AE71 /* Products */,
+				24CFC252D8ACC15BE5356F02 /* Pods */,
+				516EDE9A3D37C797150B4C7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +142,15 @@
 			path = MGPicsqueTests;
 			sourceTree = "<group>";
 		};
+		516EDE9A3D37C797150B4C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B1B9226BD3CB0E0A8A8004 /* Pods_MGPicsque.framework */,
+				9C15586FAE5CE4E41BB36658 /* Pods_MGPicsqueTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6B91AD21AC463E0022AE71 /* Build configuration list for PBXNativeTarget "MGPicsque" */;
 			buildPhases = (
+				C387FAD345ABA3F56C67CE0C /* [CP] Check Pods Manifest.lock */,
 				3A6B918C21AC463C0022AE71 /* Sources */,
 				3A6B918D21AC463C0022AE71 /* Frameworks */,
 				3A6B918E21AC463C0022AE71 /* Resources */,
+				57CBC2E0799ADD0C1131ABD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A6B91B021AC463E0022AE71 /* Build configuration list for PBXNativeTarget "MGPicsqueTests" */;
 			buildPhases = (
+				6B00393BC8F268C239C54DC2 /* [CP] Check Pods Manifest.lock */,
 				3A6B91A021AC463E0022AE71 /* Sources */,
 				3A6B91A121AC463E0022AE71 /* Frameworks */,
 				3A6B91A221AC463E0022AE71 /* Resources */,
@@ -216,6 +251,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57CBC2E0799ADD0C1131ABD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B00393BC8F268C239C54DC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MGPicsqueTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C387FAD345ABA3F56C67CE0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MGPicsque-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A6B918C21AC463C0022AE71 /* Sources */ = {
@@ -392,15 +484,13 @@
 		};
 		3A6B91AE21AC463E0022AE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F912ED8E939DC1DFC5C7DCDD /* Pods-MGPicsque.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -410,15 +500,13 @@
 		};
 		3A6B91AF21AC463E0022AE71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDD42258291E155AA3AC6FC /* Pods-MGPicsque.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -428,16 +516,13 @@
 		};
 		3A6B91B121AC463E0022AE71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A438C5BC4811A5E0E67634A4 /* Pods-MGPicsqueTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MGPicsqueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsqueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,16 +533,13 @@
 		};
 		3A6B91B221AC463E0022AE71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C3F38E1897FBAA2B45122C /* Pods-MGPicsqueTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MGPicsqueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsqueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

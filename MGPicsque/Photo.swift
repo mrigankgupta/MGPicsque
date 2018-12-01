@@ -28,10 +28,16 @@ struct PagedResponse<T: Decodable >: Decodable {
 
 struct Photo: Decodable {
     var id: String
-    var url: String?
+    var title: String
+    var url240Small: String?
+    var url360Small: String?
+    var description: String?
     public enum CodingKeys: String, CodingKey {
         case id
-        case url = "url_q"
+        case title
+        case url240Small = "url_m"
+        case url360Small = "url_n"
+        case description
     }
 }
 
@@ -43,7 +49,7 @@ protocol PageListing {
     var dict: [KeyType : KeyType] { get set }
 }
 
-struct PhotoList: Decodable, PageListing {
+struct PhotoList:Decodable, PageListing {
 
     typealias ArrayType = Photo
     typealias KeyType = String
