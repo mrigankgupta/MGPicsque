@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		131F1D8E5607C1E248C4BFB3 /* Pods_MGPicsque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1B9226BD3CB0E0A8A8004 /* Pods_MGPicsque.framework */; };
+		3A2B546121B3042900A47A42 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546021B3042900A47A42 /* PageInteractor.swift */; };
+		3A2B546321B3047B00A47A42 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546221B3047B00A47A42 /* Pageable.swift */; };
+		3A2B546621B3B5EC00A47A42 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */; };
+		3A2B546721B3B5EC00A47A42 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B546521B3B5EC00A47A42 /* LoadingCell.xib */; };
 		3A6B919421AC463C0022AE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B919321AC463C0022AE71 /* AppDelegate.swift */; };
 		3A6B919921AC463C0022AE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919721AC463C0022AE71 /* Main.storyboard */; };
 		3A6B919B21AC463E0022AE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B919A21AC463E0022AE71 /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		0BDD42258291E155AA3AC6FC /* Pods-MGPicsque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsque.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque.release.xcconfig"; sourceTree = "<group>"; };
+		3A2B546021B3042900A47A42 /* PageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageInteractor.swift; sourceTree = "<group>"; };
+		3A2B546221B3047B00A47A42 /* Pageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		3A2B546521B3B5EC00A47A42 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		3A6B919021AC463C0022AE71 /* MGPicsque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPicsque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6B919321AC463C0022AE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A6B919821AC463C0022AE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 		3A6B919221AC463C0022AE71 /* MGPicsque */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B546021B3042900A47A42 /* PageInteractor.swift */,
+				3A2B546221B3047B00A47A42 /* Pageable.swift */,
 				3A6B91BA21AEA3D70022AE71 /* PicsqueTimeline.swift */,
 				3A6B919321AC463C0022AE71 /* AppDelegate.swift */,
 				3A6B919721AC463C0022AE71 /* Main.storyboard */,
@@ -129,6 +139,8 @@
 				3A6B91BD21AEB59C0022AE71 /* FetchRecent.swift */,
 				3A6B91C021AEC3850022AE71 /* PicViewCell.swift */,
 				3A6B91C121AEC3850022AE71 /* PicViewCell.xib */,
+				3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */,
+				3A2B546521B3B5EC00A47A42 /* LoadingCell.xib */,
 			);
 			path = MGPicsque;
 			sourceTree = "<group>";
@@ -238,6 +250,7 @@
 				3A6B919E21AC463E0022AE71 /* LaunchScreen.storyboard in Resources */,
 				3A6B919B21AC463E0022AE71 /* Assets.xcassets in Resources */,
 				3A6B919921AC463C0022AE71 /* Main.storyboard in Resources */,
+				3A2B546721B3B5EC00A47A42 /* LoadingCell.xib in Resources */,
 				3A6B91C421AEC3850022AE71 /* PicViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,8 +329,11 @@
 			files = (
 				3A6B91B821AD85AE0022AE71 /* Photo.swift in Sources */,
 				3A6B91C221AEC3850022AE71 /* PicViewCell.swift in Sources */,
+				3A2B546121B3042900A47A42 /* PageInteractor.swift in Sources */,
+				3A2B546321B3047B00A47A42 /* Pageable.swift in Sources */,
 				3A6B91BB21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
 				3A6B91B521AD85100022AE71 /* WebService.swift in Sources */,
+				3A2B546621B3B5EC00A47A42 /* LoadingCell.swift in Sources */,
 				3A6B919421AC463C0022AE71 /* AppDelegate.swift in Sources */,
 				3A6B91BE21AEB59C0022AE71 /* FetchRecent.swift in Sources */,
 			);
@@ -490,7 +506,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -506,7 +525,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APGBJSJVGH;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -522,7 +544,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MGPicsqueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsqueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -539,7 +565,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MGPicsqueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsqueTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

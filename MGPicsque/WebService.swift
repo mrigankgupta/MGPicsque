@@ -25,6 +25,11 @@ protocol WebResponse: class {
     func returnedResponse<T: Decodable>(_ item: PagedResponse<T>?)
 }
 
+protocol PagableService {
+    func refreshPage()
+    func loadNextPage(currentPage: Int)
+}
+
 class WebService {
     weak var delegate: WebResponse?
     private var parameters: [String : String] = ["api_key":"\(key)",

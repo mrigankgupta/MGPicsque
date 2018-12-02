@@ -13,7 +13,7 @@ struct PhotoListing<T: Decodable>: Decodable {
     var photos: PagedResponse<T>
 }
 
-struct PagedResponse<T: Decodable >: Decodable {
+struct PagedResponse<T: Decodable>: Decodable {
     var types: [T]
     var page: Int
     var pageSize: Int
@@ -38,30 +38,5 @@ struct Photo: Decodable {
         case url240Small = "url_m"
         case url360Small = "url_n"
         case description
-    }
-}
-
-protocol PageListing {
-    associatedtype ArrayType
-    associatedtype KeyType where KeyType: Hashable
-
-    var array: [ArrayType] { get set }
-    var dict: [KeyType : KeyType] { get set }
-}
-
-struct PhotoList:Decodable, PageListing {
-
-    typealias ArrayType = Photo
-    typealias KeyType = String
-
-    var array: [Photo]
-    var dict: JsonDict
-
-    init(photos: [Photo]) {
-        array = photos
-        dict = JsonDict()
-        for photo in photos {
-            dict[photo.id] = photo.id
-        }
     }
 }
