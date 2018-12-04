@@ -10,8 +10,12 @@ import Foundation
 fileprivate let methodAPI = "flickr.photos.getRecent"
 
 class FetchRecent: WebService {
+    private let firstPage: Int
 
-    func fetchRecentPics(page: Int = 1, pageSize: Int = 15) {
+    init(firstPage: Int) {
+        self.firstPage = firstPage
+    }
+    func fetchRecentPics(page: Int, pageSize: Int = 15) {
         let service = WebService()
         let recentPics: Resourse<PhotoListing<Photo>> = service.prepareResource(page: page, pageSize: pageSize, pathForREST: "services/rest/", argsDict: ["method":"\(methodAPI)"])
         service.getMe(res: recentPics) { (pics) in
@@ -24,7 +28,7 @@ class FetchRecent: WebService {
 extension FetchRecent: PagableService {
 
     func refreshPage() {
-        fetchRecentPics()
+        fetchRecentPics(page: firstPage)
     }
 
     func loadNextPage(currentPage: Int) {

@@ -18,13 +18,19 @@ class PageInteractor<item, keyType: Hashable> {
 
     var array: [item] = []
     var dict: [keyType:keyType] = [:]
+    var service: PagableService?
 
     weak var pageDelegate: Pageable?
     weak var pageDataSource: PageDataSource?
     public internal(set) var isLoading = false
-    var service: PagableService?
-    var currentPage = 1
-    var showLoadingCell = false
+    private var currentPage: Int
+    private let firstPage: Int
+    private var showLoadingCell = false
+
+    init(firstPage: Int) {
+        self.firstPage = firstPage
+        currentPage = firstPage
+    }
 
     func setupService() {
         refreshPage()
@@ -35,6 +41,8 @@ class PageInteractor<item, keyType: Hashable> {
     }
 
     func refreshPage() {
+        array.removeAll()
+        dict.removeAll()
         isLoading = true
         service?.refreshPage()
         print("refresh Page", currentPage)
@@ -88,7 +96,7 @@ extension PageInteractor: WebResponse {
     func returnedResponse<T>(_ item: PagedResponse<T>?) where T: Decodable {
         if let currentResponse = item {
             updatePageNumber(With: currentResponse.page, totalPageCount: currentResponse.totalPageCount)
-            if currentResponse.page == 1 {
+            if currentResponse.page == firstPage {
                 pageDataSource?.addAllItems(items: currentResponse.types as [AnyObject])
                 DispatchQueue.main.async {
                     self.pageDelegate?.reloadAll()

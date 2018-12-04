@@ -31,19 +31,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJu-jk-H2p">
                                         <rect key="frame" x="0.0" y="143" width="264" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csp-U2-oIv">
                                         <rect key="frame" x="0.0" y="197" width="264" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rmj-Ek-TPk" firstAttribute="top" secondItem="zK4-Qs-nT3" secondAttribute="top" id="AVb-co-G8g"/>
                             <constraint firstAttribute="trailing" secondItem="rmj-Ek-TPk" secondAttribute="trailing" id="PWs-0s-5RW"/>
@@ -62,6 +62,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="264" height="247"/>
             <connections>
+                <outlet property="content" destination="zK4-Qs-nT3" id="wpg-Ik-tIo"/>
                 <outlet property="descript" destination="csp-U2-oIv" id="pmJ-98-TjH"/>
                 <outlet property="picImage" destination="lsV-aY-bma" id="q4N-tJ-2nn"/>
                 <outlet property="stackView" destination="rmj-Ek-TPk" id="Skh-dN-4xi"/>
