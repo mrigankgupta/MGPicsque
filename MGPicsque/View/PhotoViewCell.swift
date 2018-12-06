@@ -9,30 +9,29 @@
 import UIKit
 import Kingfisher
 
-class PicViewCell: UICollectionViewCell {
+final class PhotoViewCell: UITableViewCell {
     @IBOutlet weak var content: UIView!
-    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var picImage: UIImageView!
-    @IBOutlet weak var descript: UILabel!
     @IBOutlet weak var title: UILabel!
-    var downloadURL: URL?
+    private var downloadURL: URL?
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     func configureCell(with source: (CellDataSource & CellStyling), for indexPath: IndexPath) {
         title.text = source.titleText
-        descript.text = source.descText
         downloadURL = source.imageURL()
+        setImage(indexPath)
     }
 
-    func setImage() {
+    func setImage(_ indexPath: IndexPath) {
         if let downloadURL = downloadURL {
-            picImage.kf.setImage(with: downloadURL)
+            let processor = RoundCornerImageProcessor(cornerRadius: 20)
+            picImage.kf.setImage(with: downloadURL, placeholder: UIImage(named: "cellPlaceholder"),
+                                 options:[.processor(processor), .transition(.fade(0.2))])
         }else {
-            picImage.image = nil
+            picImage.image = UIImage(named: "cellPlaceholder")
         }
     }
 
@@ -43,7 +42,6 @@ class PicViewCell: UICollectionViewCell {
 
 protocol CellDataSource {
     var titleText: String { get }
-    var descText: String? { get }
 }
 
 protocol CellStyling {
@@ -51,12 +49,9 @@ protocol CellStyling {
 }
 
 extension Photo: CellStyling, CellDataSource {
-    var descText: String? {
-        return description
-    }
 
     func imageURL() -> URL? {
-        guard let url = url240Small else {
+        guard let url = url360Small ?? url240Small else {
             return nil
         }
         return URL(string: url)

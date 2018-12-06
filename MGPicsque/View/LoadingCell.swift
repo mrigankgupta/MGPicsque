@@ -8,12 +8,6 @@
 
 import UIKit
 
-class LoadingCell: UICollectionViewCell {
-
+final class LoadingCell: UITableViewCell {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

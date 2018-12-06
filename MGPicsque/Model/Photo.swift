@@ -31,23 +31,10 @@ struct Photo: Decodable {
     var title: String
     var url240Small: String?
     var url360Small: String?
-    var url640Mid: String?
-    var url800Mid: String?
-    var url1024Big: String?
-    var url1600Big: String?
-    var url2048Big: String?
-    var description: String?
-
     public enum CodingKeys: String, CodingKey {
         case id
         case title
         case url240Small = "url_m"
         case url360Small = "url_n"
-        case url640Mid = "url_z"
-        case url800Mid = "url_c"
-        case url1024Big = "url_b"
-        case url1600Big = "url_h"
-        case url2048Big = "url_k"
-        case description
     }
 }

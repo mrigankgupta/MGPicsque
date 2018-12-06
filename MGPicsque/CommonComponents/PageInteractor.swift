@@ -99,7 +99,7 @@ extension PageInteractor: WebResponse {
             if currentResponse.page == firstPage {
                 pageDataSource?.addAllItems(items: currentResponse.types as [AnyObject])
                 DispatchQueue.main.async {
-                    self.pageDelegate?.reloadAll()
+                    self.pageDelegate?.reloadAll(true)
                 }
             } else {
                 if let numberOfItems = pageDataSource?.addUniqueItems(for: currentResponse.types as [AnyObject]) {
@@ -111,6 +111,9 @@ extension PageInteractor: WebResponse {
             }
         }else {
             isLoading = false
+            DispatchQueue.main.async {
+                self.pageDelegate?.reloadAll(true)
+            }
             print("some error")
         }
     }

@@ -66,7 +66,7 @@ class WebService {
         }
         var components = URLComponents(url: baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false)!
         components.queryItems = queryItems
-        print(components.url)
+//        print(components.url)
         return components.url!
     }
 
@@ -76,7 +76,7 @@ class WebService {
         parameters["pageSize"] = String(pageSize)
         let completeURL = WebService.getURL(baseURL: baseURL, path: pathForREST, params: parameters, argsDict: argsDict)
         let downloadable = Resourse<T>(url: completeURL) { (raw) -> T? in
-            print(raw)
+//            print(raw)
             do {
                 let parsedDict = try JSONDecoder().decode(T.self, from: raw)
                 return parsedDict
