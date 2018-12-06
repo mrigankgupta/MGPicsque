@@ -9,7 +9,6 @@
 import Foundation
 
 //Key: b941d84458baafeca405fa394a7f8e94
-//Secret: 4a7ee4061a83e469
 fileprivate let key = "b941d84458baafeca405fa394a7f8e94"
 fileprivate let format = "json"
 fileprivate let extras = "url_m,url_n"
