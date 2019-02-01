@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-let firstReqIndex = 1
+private let firstReqIndex = 1
 
 final class PicsqueTimeline: UIViewController {
 
@@ -122,6 +122,7 @@ extension PicsqueTimeline {
 
         picsTimeline.backgroundColor = .black
         picsTimeline.tableFooterView = UIView(frame: .zero)
+        self.navigationController?.navigationBar.isTranslucent = false
         picsTimeline.setupRefreshControl(self, selector:#selector(self.refreshPage))
     }
 
