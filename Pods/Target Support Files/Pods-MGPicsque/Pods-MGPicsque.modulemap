@@ -1,0 +1,6 @@
+framework module Pods_MGPicsque {
+  umbrella header "Pods-MGPicsque-umbrella.h"
+
+  export *
+  module * { export * }
+}

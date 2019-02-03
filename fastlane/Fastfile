@@ -27,7 +27,7 @@ platform :ios do
   end
   lane :CD do |values|
  
-    gym(scheme: 'MGPicsque', project: "MGPicsque.xcodeproj", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
+    gym(scheme: 'MGPicsque', workspace: "MGPicsque.xcworkspace", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
  
     crashlytics(
     api_token: "93709ebde8fa6d3637931fb32b40b91cd4cf1e98",
