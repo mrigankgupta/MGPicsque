@@ -7,7 +7,8 @@ target 'MGPicsque' do
 
   # Pods for MGPicsque
   pod 'Kingfisher', '~> 4.0'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
   target 'MGPicsqueTests' do
     inherit! :search_paths
     # Pods for testing

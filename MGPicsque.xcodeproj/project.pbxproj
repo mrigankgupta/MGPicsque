@@ -29,6 +29,8 @@
 		3A6B91BF21AEB59C0022AE71 /* FetchPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BD21AEB59C0022AE71 /* FetchPopular.swift */; };
 		3A6B91C221AEC3850022AE71 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PhotoViewCell.swift */; };
 		3A6B91C321AEC3850022AE71 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PhotoViewCell.swift */; };
+		3A9836492206909500C68709 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546221B3047B00A47A42 /* Pageable.swift */; };
+		3A98364A2206909A00C68709 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546021B3042900A47A42 /* PageInteractor.swift */; };
 		4D7B7E75B303B17F598E0751 /* Pods_MGPicsqueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C15586FAE5CE4E41BB36658 /* Pods_MGPicsqueTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +217,7 @@
 				3A6B918D21AC463C0022AE71 /* Frameworks */,
 				3A6B918E21AC463C0022AE71 /* Resources */,
 				57CBC2E0799ADD0C1131ABD1 /* [CP] Embed Pods Frameworks */,
+				3AD0AE0122048A2F00C43B56 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -305,6 +308,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3AD0AE0122048A2F00C43B56 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 93709ebde8fa6d3637931fb32b40b91cd4cf1e98 8085ae2f681f362bcc20370e0299db002d1efa1239bd3c23483b32e205efc12f\n";
+		};
 		57CBC2E0799ADD0C1131ABD1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,7 +404,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6B91B921AD85AE0022AE71 /* Photo.swift in Sources */,
+				3A98364A2206909A00C68709 /* PageInteractor.swift in Sources */,
 				3A6B91C321AEC3850022AE71 /* PhotoViewCell.swift in Sources */,
+				3A9836492206909500C68709 /* Pageable.swift in Sources */,
 				3A6B91BC21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
 				3A6B91B621AD85100022AE71 /* WebService.swift in Sources */,
 				3A3B299F21B902AD00C297A7 /* LoadingCell.swift in Sources */,
