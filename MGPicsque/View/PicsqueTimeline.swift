@@ -8,16 +8,19 @@
 
 import UIKit
 import Kingfisher
+import Pageable
 
 private let firstReqIndex = 1
 
 final class PicsqueTimeline: UIViewController {
 
     @IBOutlet weak var picsTimeline: UITableView!
+    //Point: 1
     private var pgInteractor: PageInteractor<Photo, String>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Point: 2
         setupPageInteractor()
 
         setupTableView()
@@ -37,11 +40,11 @@ extension PicsqueTimeline: UITableViewDataSourcePrefetching {
 
 extension PicsqueTimeline: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //Point: 3
         pgInteractor.shouldPrefetch(index: indexPath.item)
     }
 
 }
-
 extension PicsqueTimeline: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,7 +67,7 @@ extension PicsqueTimeline: UITableViewDataSource {
     }
 
 }
-
+//Point: 4
 extension PicsqueTimeline: PageDataSource {
 
     func addUniqueItems(for items: [AnyObject]) -> Range<Int> {
@@ -80,7 +83,7 @@ extension PicsqueTimeline: PageDataSource {
         return startIndex..<pgInteractor.count()
     }
 
-    func addAllItems(items: [AnyObject]) {
+    func addAll(items: [AnyObject]) {
         if let items = items as? [Photo] {
             pgInteractor.array = items
             for new in items {
@@ -91,6 +94,7 @@ extension PicsqueTimeline: PageDataSource {
 }
 
 extension PicsqueTimeline {
+    //Point: 6
     @objc
     func refreshPage() {
         pgInteractor.refreshPage()
@@ -125,7 +129,7 @@ extension PicsqueTimeline {
         self.navigationController?.navigationBar.isTranslucent = false
         picsTimeline.setupRefreshControl(self, selector:#selector(self.refreshPage))
     }
-
+    //point: 5
     private func setupPageInteractor() {
         pgInteractor = PageInteractor(firstPage: firstReqIndex)
         pgInteractor.pageDelegate = self.picsTimeline
@@ -133,6 +137,6 @@ extension PicsqueTimeline {
         let fetchPopular = FetchPopular(firstPage: firstReqIndex)
         fetchPopular.delegate = pgInteractor
         pgInteractor.service = fetchPopular
-        pgInteractor.setupService()
+        pgInteractor.refreshPage()
     }
 }

@@ -7,32 +7,43 @@
 //
 
 import Foundation
+import Pageable
 
 fileprivate let methodAPI = "flickr.groups.pools.getPhotos"
+
 final class FetchPopular: WebService {
     private let firstPage: Int
 
     init(firstPage: Int) {
         self.firstPage = firstPage
+        super.init()
     }
 
     private func fetchPopularPics(page: Int, pageSize: Int = 15) {
-        let service = WebService()
-        let recentPics: Resourse<PhotoListing<Photo>> = service.prepareResource(page: page, pageSize: pageSize, pathForREST: "services/rest/", argsDict: ["method":"\(methodAPI)","group_id":"1577604@N20"])
-        service.getMe(res: recentPics) { (pics) in
-//            print(pics)
-            self.delegate?.returnedResponse(pics?.photos)
+        guard let recentPics: Resourse<PhotoListing<Photo>> = try? self.prepareResource(page: page, pageSize: pageSize, pathForREST: "/services/rest/", argsDict: ["method":"\(methodAPI)","group_id":"1577604@N20"]) else { return }
+        var info: PageInfo<Photo>?
+        getMe(res: recentPics) { (res) in
+            switch res {
+            case let .success(result):
+                info = PageInfo(types: result.photos.types, page: result.photos.page,
+                                totalPageCount: result.photos.totalPageCount)
+            case let .failure(err):
+                print(err)
+            }
+            self.delegate?.returnedResponse(info)
         }
     }
 }
 
+//point: 3
 extension FetchPopular: PagableService {
 
-    func refreshPage() {
-        fetchPopularPics(page: firstPage)
+    func loadPage(_ page: Int) {
+        fetchPopularPics(page: page)
     }
 
-    func loadNextPage(currentPage: Int) {
-        fetchPopularPics(page: currentPage+1)
+    func cancelAllRequests() {
+        cancelAll()
     }
+
 }

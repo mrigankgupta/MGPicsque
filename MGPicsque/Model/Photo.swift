@@ -7,7 +7,7 @@
 //
 
 import Foundation
-typealias JsonDict = [String : String]
+import Pageable
 
 struct PhotoListing<T: Decodable>: Decodable {
     var photos: PagedResponse<T>

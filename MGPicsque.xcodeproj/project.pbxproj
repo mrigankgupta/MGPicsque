@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		131F1D8E5607C1E248C4BFB3 /* Pods_MGPicsque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B1B9226BD3CB0E0A8A8004 /* Pods_MGPicsque.framework */; };
-		3A2B546121B3042900A47A42 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546021B3042900A47A42 /* PageInteractor.swift */; };
-		3A2B546321B3047B00A47A42 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546221B3047B00A47A42 /* Pageable.swift */; };
 		3A2B546621B3B5EC00A47A42 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */; };
 		3A3B299F21B902AD00C297A7 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */; };
 		3A3C025A21B6F3D2003B9117 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C025921B6F3D1003B9117 /* LoadingCell.xib */; };
@@ -29,8 +27,6 @@
 		3A6B91BF21AEB59C0022AE71 /* FetchPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91BD21AEB59C0022AE71 /* FetchPopular.swift */; };
 		3A6B91C221AEC3850022AE71 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PhotoViewCell.swift */; };
 		3A6B91C321AEC3850022AE71 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B91C021AEC3850022AE71 /* PhotoViewCell.swift */; };
-		3A9836492206909500C68709 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546221B3047B00A47A42 /* Pageable.swift */; };
-		3A98364A2206909A00C68709 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B546021B3042900A47A42 /* PageInteractor.swift */; };
 		4D7B7E75B303B17F598E0751 /* Pods_MGPicsqueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C15586FAE5CE4E41BB36658 /* Pods_MGPicsqueTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +42,6 @@
 
 /* Begin PBXFileReference section */
 		0BDD42258291E155AA3AC6FC /* Pods-MGPicsque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPicsque.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque.release.xcconfig"; sourceTree = "<group>"; };
-		3A2B546021B3042900A47A42 /* PageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageInteractor.swift; sourceTree = "<group>"; };
-		3A2B546221B3047B00A47A42 /* Pageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
 		3A2B546421B3B5EC00A47A42 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		3A3C025921B6F3D1003B9117 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		3A3C026021B6F462003B9117 /* PhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
@@ -124,15 +118,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3A3C026321B79231003B9117 /* CommonComponents */ = {
-			isa = PBXGroup;
-			children = (
-				3A2B546221B3047B00A47A42 /* Pageable.swift */,
-				3A2B546021B3042900A47A42 /* PageInteractor.swift */,
-			);
-			path = CommonComponents;
-			sourceTree = "<group>";
-		};
 		3A3C026421B7925F003B9117 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +152,6 @@
 		3A6B919221AC463C0022AE71 /* MGPicsque */ = {
 			isa = PBXGroup;
 			children = (
-				3A3C026321B79231003B9117 /* CommonComponents */,
 				3A3B299E21B9028400C297A7 /* View */,
 				3A3B299D21B9026F00C297A7 /* Model */,
 				3A78A65321B8FFCD006C286D /* Network */,
@@ -332,16 +316,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageable/Pageable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MGPicsque/Pods-MGPicsque-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6B00393BC8F268C239C54DC2 /* [CP] Check Pods Manifest.lock */ = {
@@ -389,8 +375,6 @@
 			files = (
 				3A6B91B821AD85AE0022AE71 /* Photo.swift in Sources */,
 				3A6B91C221AEC3850022AE71 /* PhotoViewCell.swift in Sources */,
-				3A2B546121B3042900A47A42 /* PageInteractor.swift in Sources */,
-				3A2B546321B3047B00A47A42 /* Pageable.swift in Sources */,
 				3A6B91BB21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
 				3A6B91B521AD85100022AE71 /* WebService.swift in Sources */,
 				3A2B546621B3B5EC00A47A42 /* LoadingCell.swift in Sources */,
@@ -404,9 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6B91B921AD85AE0022AE71 /* Photo.swift in Sources */,
-				3A98364A2206909A00C68709 /* PageInteractor.swift in Sources */,
 				3A6B91C321AEC3850022AE71 /* PhotoViewCell.swift in Sources */,
-				3A9836492206909500C68709 /* Pageable.swift in Sources */,
 				3A6B91BC21AEA3D70022AE71 /* PicsqueTimeline.swift in Sources */,
 				3A6B91B621AD85100022AE71 /* WebService.swift in Sources */,
 				3A3B299F21B902AD00C297A7 /* LoadingCell.swift in Sources */,
@@ -567,13 +549,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = APGBJSJVGH;
+				DEVELOPMENT_TEAM = 8F3G46ZPZ8;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.MGTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,13 +568,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = APGBJSJVGH;
+				DEVELOPMENT_TEAM = 8F3G46ZPZ8;
 				INFOPLIST_FILE = MGPicsque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.MGTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogicx.MGPicsque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
