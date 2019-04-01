@@ -14,7 +14,7 @@ private let firstReqIndex = 1
 
 final class PicsqueTimeline: UIViewController {
 
-    @IBOutlet weak var picsTimeline: UITableView!
+    @IBOutlet weak private var picsTimeline: UITableView!
     //Point: 1
     private var pgInteractor: PageInteractor<Photo, String>!
 

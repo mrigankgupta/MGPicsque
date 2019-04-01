@@ -10,14 +10,10 @@ import UIKit
 import Kingfisher
 
 final class PhotoViewCell: UITableViewCell {
-    @IBOutlet weak var content: UIView!
-    @IBOutlet weak var picImage: UIImageView!
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak private var content: UIView!
+    @IBOutlet weak private var picImage: UIImageView!
+    @IBOutlet weak private var title: UILabel!
     private var downloadURL: URL?
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
     func configureCell(with source: (CellDataSource & CellStyling), for indexPath: IndexPath) {
         title.text = source.titleText

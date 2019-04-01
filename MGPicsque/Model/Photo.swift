@@ -10,14 +10,14 @@ import Foundation
 import Pageable
 
 struct PhotoListing<T: Decodable>: Decodable {
-    var photos: PagedResponse<T>
+    let photos: PagedResponse<T>
 }
 
 struct PagedResponse<T: Decodable>: Decodable {
-    var types: [T]
-    var page: Int
-    var pageSize: Int
-    var totalPageCount: Int
+    let types: [T]
+    let page: Int
+    let pageSize: Int
+    let totalPageCount: Int
     public enum CodingKeys: String, CodingKey {
         case types = "photo"
         case page
@@ -27,10 +27,10 @@ struct PagedResponse<T: Decodable>: Decodable {
 }
 
 struct Photo: Decodable {
-    var id: String
-    var title: String
-    var url240Small: String?
-    var url360Small: String?
+    let id: String
+    let title: String
+    let url240Small: String?
+    let url360Small: String?
     public enum CodingKeys: String, CodingKey {
         case id
         case title
